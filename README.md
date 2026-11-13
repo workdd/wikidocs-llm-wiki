@@ -1,31 +1,7 @@
 # LLM Wiki 해부: 문서를 스스로 정리하는 지식 위키 앱 코드로 읽기
 
-이 책은 WikiDocs와 연동된 GitHub 리포지토리입니다.
+[nashsu/llm_wiki](https://github.com/nashsu/llm_wiki)는 문서를 넣으면 LLM이 요약 · 개체 · 개념 페이지를 만들고 서로 링크를 걸어, 질문할 때마다 다시 찾지 않고 계속 쌓이는 위키를 유지하는 데스크톱 앱이다. 이 책은 Tauri(Rust) 백엔드와 React 프론트엔드 코드를 따라가며 수집, 위키링크, 검색, 그래프, 린트, 에이전트 런타임, MCP 서버가 어떻게 맞물리는지 설명한다.
 
-## 사용 방법
-
-1. `TOC.md` 파일에서 목차 구조를 정의하세요.
-2. `pages/` 디렉토리에 마크다운 파일을 추가하세요.
-3. 변경사항을 push하면 WikiDocs에 자동으로 반영됩니다.
-
-## 페이지 정렬 규칙 (중요!)
-
-WikiDocs는 페이지를 **제목 알파벳순**으로 자동 정렬합니다.
-원하는 순서를 유지하려면 제목에 **번호를 붙이세요**:
-
-```markdown
-# TOC.md 예시
-* [01. 시작하기](pages/01-getting-started.md)
-  * [01-1. 설치](pages/01-1-install.md)
-  * [01-2. 환경설정](pages/01-2-config.md)
-* [02. 기본 문법](pages/02-basics.md)
-* [03. 심화 학습](pages/03-advanced.md)
-```
-
-## 이미지 사용
-
-이미지는 `assets/` 디렉토리에 저장하고 상대 경로로 참조하세요:
-
-```markdown
-![이미지 설명](./assets/example.png)
-```
+- 기준 커밋: [`e08cfce`](https://github.com/nashsu/llm_wiki/tree/e08cfce65aad8b76b13546a081c1a8d4422b70c3) (2026-10-21)
+- 원본 라이선스: GPL-3.0. 코드 인용은 해설에 필요한 만큼 짧게 하고 원문 링크를 함께 건다
+- 원고 저장소: [workdd/I_AM_ML_Engineer](https://github.com/workdd/I_AM_ML_Engineer) `books/llm-wiki`
